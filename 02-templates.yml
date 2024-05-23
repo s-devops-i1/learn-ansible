@@ -5,3 +5,7 @@
       ansible.builtin.template:
         src: example-template.conf
         dest: /tmp/example-template.conf
+
+    - name: printing Environement var
+      ansible.builtin.debug:
+        msg: "{{ env }}"
