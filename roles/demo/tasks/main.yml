@@ -1,3 +1,4 @@
 - name: printing from role
   ansible.builtin.debug:
-    msg: "printing from demo dir"
+    msg: "printing - "{{ component }}
+
