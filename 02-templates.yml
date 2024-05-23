@@ -1,0 +1,7 @@
+- name: playbook for template
+  hosts: localhost
+  tasks:
+    - name: Template a file to /tmp/example-template.conf
+      ansible.builtin.template:
+        src: example-template.conf
+        dest: /tmp/example-template.conf
