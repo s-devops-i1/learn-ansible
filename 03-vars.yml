@@ -1,0 +1,8 @@
+- name: playbook for variable demo
+  hosts: localhost
+  tasks:
+    - name: print tasks var
+      vars:
+        URL: tasks.example.com
+      ansible.builtin.debug:
+        msg: "{{ URL }} is task level variable"
